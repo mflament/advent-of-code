@@ -209,10 +209,10 @@ public class Day13 {
 
 	public static void main(String[] args) throws IOException {
 		if (args.length > 0 && "demo".equals(args[0]))
-			ansiDemo(parseFirewall("day13-test.txt"));
+			ansiDemo(parseFirewall("day13.txt"));
 		else {
 			Firewall firewall = parseFirewall("day13.txt");
-			DayExecutor.execute(13, () -> firewall.run(), () -> firewall.findDelay());
+			DayExecutor.execute(13, firewall::run, firewall::findDelay);
 		}
 	}
 
