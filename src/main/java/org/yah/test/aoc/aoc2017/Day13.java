@@ -232,7 +232,6 @@ public class Day13 {
 		try {
 			Thread.sleep(time);
 		} catch (InterruptedException e) {
-			return;
 		}
 	}
 }
